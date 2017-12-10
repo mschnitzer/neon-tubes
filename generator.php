@@ -1,6 +1,6 @@
 <?php
  if (!isset($_GET['color']) || !preg_match("/[\da-f]{6}/i", $_GET['color']))
-   die('no hex color provided. example: generator.php?color=ff0000');
+   die('no hex color provided. example: ?color=ff0000');
  $color = $_GET['color'];
  header('Content-Description: File Transfer');
  header('Content-Type: application/octet-stream');
